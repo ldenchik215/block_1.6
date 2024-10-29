@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'TT Lakes';
+	src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+		url('../fonts/TTLakes-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: url("../fonts/TTLakes-Medium.woff") format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+		url('../fonts/TTLakes-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	font-family: "TT Lakes";
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	line-height: 24px;
+	color: #7E7E82;
+	background-color: #F8F8F8;
+}
+
+._container {
+	max-width: 1120px;
+	padding: 0 16px;
+}
+/* ==================================Slider section========================================= */
+
+.main__section {
+	border-top: 1px solid #D9FFF5;
+}
+.repair-brands-section {
+}
+
+.repair-brands-section__title {
+	margin-bottom: 16px;
+}
+.section-title {	
+	font-weight: normal;
+	letter-spacing: -0.2px;
+	padding: 16px;
+	background: linear-gradient(to right, #f8f8f8, #fff);
+}
+
+.repair-brands-section__cards {
+	margin-bottom: 16px;
+}
+.cards-brands {
+}
+.swiper-wrapper {
+}
+.cards-brands__list {
+}
+.swiper-slide {
+}
+.cards-brands__item {
+	padding: 16px;
+	width: 240px;
+	height: 72px;
+	border: 1px solid #EAEAEA;
+	border-radius: 6px;
+	background-color: #fff;
+}
+.cards-brands__link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.cards-brands__img {
+}
+.cards-brands__link-arrow {
+	border: 2px solid #FF3E79;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("./../img/icons/dropdown.svg") center center no-repeat;
+}
+.swiper-pagination {
+}
+.repair-brands-section__read-more-btn {
+}
+
+@media (min-width: 768px) {
+	._container {
+		padding: 0 24px;
+	}
+
+	.repair-brands-section__title {
+		padding: 16px 24px;
+	}
+	
+	.repair-brands-section__cards {
+		margin-bottom: 24px;
+	}
+
+	.cards-brands__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+		justify-content: space-between;
+		gap: 16px 24px;
+	}
+
+	.cards-brands__item {
+		width: 100%;		
+	}
+}
+
+@media (min-width: 1120px) {
+	._container {
+		padding: 0 32px;
+		margin: 0 auto;
+	}
+
+	.repair-brands-section__title {
+		padding: 16px 32px;
+		margin: 0 auto;
+	}
+
+	.cards-brands__list {
+		grid-template-columns: repeat(4, 240px);
+		gap: 16px 32px;
+	}
+
+	.cards-brands__item {
+		width: 240px;
+	}
+	
+}

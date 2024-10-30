@@ -36,35 +36,44 @@ body {
 	max-width: 1120px;
 	padding: 0 16px;
 }
+
 /* ==================================Slider section========================================= */
 
 .main__section {
 	border-top: 1px solid #D9FFF5;
 }
-.repair-brands-section {
-}
 
-.repair-brands-section__title {
+.repair-brands-section {}
+
+.repair-brands-section__title-wrapper {
 	margin-bottom: 16px;
 }
-.section-title {	
+
+.title-wrapper {
+	background: linear-gradient(to right, #f8f8f8, #fff);
+}
+
+
+.section-title {
 	font-weight: normal;
 	letter-spacing: -0.2px;
-	padding: 16px;
-	background: linear-gradient(to right, #f8f8f8, #fff);
+	padding: 16px 0;
 }
 
 .repair-brands-section__cards {
 	margin-bottom: 16px;
 }
+
 .cards-brands {
+	height: 100px;
 }
-.swiper-wrapper {
-}
-.cards-brands__list {
-}
-.swiper-slide {
-}
+
+.swiper-wrapper {}
+
+.cards-brands__list {}
+
+.swiper-slide {}
+
 .cards-brands__item {
 	padding: 16px;
 	width: 240px;
@@ -73,6 +82,7 @@ body {
 	border-radius: 6px;
 	background-color: #fff;
 }
+
 .cards-brands__link {
 	display: flex;
 	justify-content: space-between;
@@ -80,8 +90,9 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.cards-brands__img {
-}
+
+.cards-brands__img {}
+
 .cards-brands__link-arrow {
 	border: 2px solid #FF3E79;
 	border-radius: 50%;
@@ -92,9 +103,25 @@ body {
 	align-items: center;
 	background: url("./../img/icons/dropdown.svg") center center no-repeat;
 }
-.swiper-pagination {
+
+.swiper .swiper-pagination {
+	line-height: 8px;
+	bottom: 0;
 }
+
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #DDDDDD;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #B5B6BC;
+}
+
 .repair-brands-section__read-more-btn {
+	display: none;
 }
 
 @media (min-width: 768px) {
@@ -102,10 +129,10 @@ body {
 		padding: 0 24px;
 	}
 
-	.repair-brands-section__title {
-		padding: 16px 24px;
+	.repair-brands-section__title-wrapper {
+		margin-bottom: 24px;
 	}
-	
+
 	.repair-brands-section__cards {
 		margin-bottom: 24px;
 	}
@@ -118,18 +145,21 @@ body {
 	}
 
 	.cards-brands__item {
-		width: 100%;		
+		width: 100%;
+	}
+
+	.swiper .swiper-pagination {
+		display: none;
+	}
+
+	.repair-brands-section__read-more-btn {
+		display: block;
 	}
 }
 
 @media (min-width: 1120px) {
 	._container {
 		padding: 0 32px;
-		margin: 0 auto;
-	}
-
-	.repair-brands-section__title {
-		padding: 16px 32px;
 		margin: 0 auto;
 	}
 
@@ -141,5 +171,5 @@ body {
 	.cards-brands__item {
 		width: 240px;
 	}
-	
+
 }

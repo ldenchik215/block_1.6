@@ -1,37 +1,8 @@
-let brandsSlider = null
-const mediaQuerySize = 768
+const brandsBtn = document.getElementById('show-all-btn-brands')
+const cardBradsList = document.querySelector('.cards-brands')
 
-if (document.body.clientWidth < mediaQuerySize) {
-	sliderInit()
-}
 
-window.addEventListener('resize', () => {
-	if (document.body.clientWidth < mediaQuerySize) {
-		sliderInit()
-	} else {
-		sliderDestroy()
-	}	
+brandsBtn.addEventListener('click', () => {
+	brandsBtn.classList.toggle('read-more-btn--open')
+	cardBradsList.classList.toggle('cards-brands--show-all')
 })
-
-function sliderInit () {
-	if (!brandsSlider) {
-		brandsSlider = new Swiper('.swiper', {
-			loop: false,
-			slidesPerView: 'auto',
-			spaceBetween: 16,
-		
-			pagination: {
-				el: '.swiper-pagination',
-			},
-		
-		})
-	}
-}
-
-function sliderDestroy () {
-	if (brandsSlider) {
-		brandsSlider.destroy()
-		brandsSlider = null
-	}
-}
-

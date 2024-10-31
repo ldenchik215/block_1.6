@@ -124,6 +124,8 @@ body {
 	display: none;
 }
 
+
+
 @media (min-width: 768px) {
 	._container {
 		padding: 0 24px;
@@ -137,6 +139,15 @@ body {
 		margin-bottom: 24px;
 	}
 
+	.cards-brands {
+		max-height: 160px;
+		height: auto;
+	}
+
+	.cards-brands--show-all {
+		max-height: none;
+	}
+
 	.cards-brands__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
@@ -148,6 +159,18 @@ body {
 		width: 100%;
 	}
 
+	.cards-brands__img, .cards-brands__link-arrow {
+		transition: all .3s ease 0s;
+	}
+
+	.cards-brands__item:hover .cards-brands__img {
+		transform: scale(1.1);
+	}
+
+	.cards-brands__item:hover .cards-brands__link-arrow {
+		opacity: 0.6;
+	}
+
 	.swiper .swiper-pagination {
 		display: none;
 	}
@@ -155,6 +178,40 @@ body {
 	.repair-brands-section__read-more-btn {
 		display: block;
 	}
+
+	.read-more-btn {
+		position: relative;
+		padding-left: 32px;
+		width: 132px;
+		height: 24px;
+		background-color: transparent;
+		color: #1B1C21;
+		font-size: 16px;
+		letter-spacing: -0.2px;
+		transition: all .3s ease 0s;
+	}
+
+	.read-more-btn::before {
+		content: '';
+		background: url("../img/icons/icon-read-more.svg") 0 0 no-repeat;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0;
+		top: 0;
+		display: block;
+		transition: all .3s ease 0s;
+	}
+
+	.read-more-btn:hover.read-more-btn {
+		transform: scale(1.02);
+	}
+
+	.read-more-btn--open.read-more-btn::before {
+		transform: rotate(-180deg);
+	}
+
+
 }
 
 @media (min-width: 1120px) {

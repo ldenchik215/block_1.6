@@ -43,8 +43,6 @@ body {
 	border-top: 1px solid #D9FFF5;
 }
 
-.repair-brands-section {}
-
 .repair-brands-section__title-wrapper {
 	margin-bottom: 16px;
 }
@@ -68,11 +66,6 @@ body {
 	height: 100px;
 }
 
-.swiper-wrapper {}
-
-.cards-brands__list {}
-
-.swiper-slide {}
 
 .cards-brands__item {
 	padding: 16px;
@@ -90,8 +83,6 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
-.cards-brands__img {}
 
 .cards-brands__link-arrow {
 	border: 2px solid #FF3E79;
